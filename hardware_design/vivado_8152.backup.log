@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Jun 20 05:30:31 2018
+# Process ID: 8152
+# Current directory: C:/Users/shzhang/Desktop/frame-compression
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7988 C:\Users\shzhang\Desktop\frame-compression\frame-compression.xpr
+# Log file: C:/Users/shzhang/Desktop/frame-compression/vivado.log
+# Journal file: C:/Users/shzhang/Desktop/frame-compression\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shzhang/Desktop/frame-compression/frame-compression.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 744.945 ; gain = 119.500
+update_compile_order -fileset sources_1
+set_property top IBP_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'IBP_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+"xvlog -m64 --relax -prj IBP_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/Intra_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Intra_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IBP
+INFO: [VRFC 10-2458] undeclared symbol IntraOut1, assumed default net type wire [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:107]
+INFO: [VRFC 10-2458] undeclared symbol IntraOut2, assumed default net type wire [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:108]
+INFO: [VRFC 10-2458] undeclared symbol IntraOut3, assumed default net type wire [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:109]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/IBP_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IBP_Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj IBP_Test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto e0b1e9f51fa74407b45e0b59f8d23dbb --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot IBP_Test_behav xil_defaultlib.IBP_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port DataOut1 [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:107]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port DataOut2 [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:108]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port DataOut3 [C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Intra_mode
+Compiling module xil_defaultlib.IBP_default
+Compiling module xil_defaultlib.IBP_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IBP_Test_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xsim.dir/IBP_Test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 20 05:31:27 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IBP_Test_behav -key {Behavioral:sim_1:Functional:IBP_Test} -tclbatch {IBP_Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source IBP_Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IBP_Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 765.523 ; gain = 20.578
+set_property top VLC_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/IBP_Test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'VLC_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+"xvlog -m64 --relax -prj VLC_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v" into library blk_mem_gen_v8_3_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_3
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/sim/Residual_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Residual_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/VLC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VLC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/VLC_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VLC_Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj VLC_Test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto e0b1e9f51fa74407b45e0b59f8d23dbb --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L blk_mem_gen_v8_3_2 -L unisims_ver -L unimacro_ver -L secureip --snapshot VLC_Test_behav xil_defaultlib.VLC_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v:2414]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v:2415]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VLC
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_output_stage(...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_output_stage(...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2(C_ELABORATION...
+Compiling module xil_defaultlib.Residual_BRAM
+Compiling module xil_defaultlib.VLC_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VLC_Test_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xsim.dir/VLC_Test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 20 06:00:46 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "VLC_Test_behav -key {Behavioral:sim_1:Functional:VLC_Test} -tclbatch {VLC_Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source VLC_Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module VLC_Test.t1.inst.native_mem_module.blk_mem_gen_v8_3_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'VLC_Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 799.117 ; gain = 2.020
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/IBP_Test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'VLC_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+"xvlog -m64 --relax -prj VLC_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v" into library blk_mem_gen_v8_3_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_3
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/sim/Residual_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Residual_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/VLC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VLC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/VLC_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VLC_Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj VLC_Test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto e0b1e9f51fa74407b45e0b59f8d23dbb --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L blk_mem_gen_v8_3_2 -L unisims_ver -L unimacro_ver -L secureip --snapshot VLC_Test_behav xil_defaultlib.VLC_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v:2414]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v:2415]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VLC
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_output_stage(...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_output_stage(...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_2.blk_mem_gen_v8_3_2(C_ELABORATION...
+Compiling module xil_defaultlib.Residual_BRAM
+Compiling module xil_defaultlib.VLC_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VLC_Test_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xsim.dir/VLC_Test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 20 06:07:15 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "VLC_Test_behav -key {Behavioral:sim_1:Functional:VLC_Test} -tclbatch {VLC_Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source VLC_Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module VLC_Test.t1.inst.native_mem_module.blk_mem_gen_v8_3_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'VLC_Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 836.105 ; gain = 16.648
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 20 06:18:06 2018...

@@ -1,0 +1,347 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 19 19:32:58 2018
+# Process ID: 3388
+# Current directory: C:/Users/shzhang/Desktop/frame-compression
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6652 C:\Users\shzhang\Desktop\frame-compression\frame-compression.xpr
+# Log file: C:/Users/shzhang/Desktop/frame-compression/vivado.log
+# Journal file: C:/Users/shzhang/Desktop/frame-compression\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shzhang/Desktop/frame-compression/frame-compression.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/VLC.v w ]
+add_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/VLC.v
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {32} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips Residual_BRAM]
+generate_target all [get_files  C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci]
+export_ip_user_files -of_objects [get_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci] -no_script -force -quiet
+reset_run Residual_BRAM_synth_1
+launch_run -jobs 2 Residual_BRAM_synth_1
+export_simulation -of_objects [get_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci] -directory C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files -ipstatic_source_dir C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/VLC_Test.v w ]
+add_files -fileset sim_1 C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/VLC_Test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top VLC_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source VLC_Test.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IBP_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source IBP_Test.tcl
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/Top.v w ]
+add_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/Top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/Top_Test.v w ]
+add_files -fileset sim_1 C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/Top_Test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source Top_Test.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips Residual_BRAM]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top VLC_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_13
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+set_property -dict [list CONFIG.Operating_Mode_A {READ_FIRST}] [get_ips Residual_BRAM]
+generate_target all [get_files  C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci]
+export_ip_user_files -of_objects [get_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci] -no_script -force -quiet
+reset_run Residual_BRAM_synth_1
+launch_run -jobs 2 Residual_BRAM_synth_1
+export_simulation -of_objects [get_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.xci] -directory C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files -ipstatic_source_dir C:/Users/shzhang/Desktop/frame-compression/frame-compression.ip_user_files/ipstatic -force -quiet
+close_sim
+launch_simulation
+current_sim simulation_15
+launch_simulation
+launch_simulation
+source VLC_Test.tcl
+close_sim
+current_sim simulation_15
+launch_simulation
+source VLC_Test.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/BRAM_Test.v w ]
+add_files -fileset sim_1 C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/BRAM_Test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BRAM_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source BRAM_Test.tcl
+current_sim simulation_21
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top VLC_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+current_sim simulation_22
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+current_sim simulation_22
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+close_sim
+launch_simulation
+source VLC_Test.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_15
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+current_sim simulation_31
+launch_simulation
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+current_sim simulation_31
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+current_sim simulation_31
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+current_sim simulation_31
+launch_simulation
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+close_sim
+launch_simulation
+source Top_Test.tcl
+remove_files C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP_mode.v
+file delete -force C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sources_1/new/IBP_mode.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IBP_mode_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top_Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/IBP_mode_Test.v
+file delete -force C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/sim_1/new/IBP_mode_Test.v
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+config_timing_analysis -disable_flight_delays true
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 3 -input_pins -name timing_2
+create_run synth_2 -flow {Vivado Synthesis 2016} -strategy {Vivado Synthesis Defaults}
+current_run [get_runs synth_2]
+set_property strategy Flow_RuntimeOptimized [get_runs synth_2]
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 3 -input_pins -name timing_3
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} -add
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 3 -input_pins -name timing_4
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+report_power -name {power_2}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 3 -input_pins -name timing_5
+report_drc -name drc_1 -ruledecks {default}
+launch_runs impl_2 -jobs 2
+wait_on_run impl_2
+file mkdir C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/constrs_1/new
+close [ open C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc w ]
+add_files -fileset constrs_1 C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc
+set_property target_constrs_file C:/Users/shzhang/Desktop/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc [current_fileset -constrset]
+save_constraints -force
+open_run impl_2
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+report_drc -name drc_1 -ruledecks {default}
+set_property strategy Performance_Retiming [get_runs impl_2]
+current_design synth_1
+close_design
+open_run synth_2 -name synth_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+close_sim
+current_sim simulation_31
+close_sim
+current_sim simulation_22
+close_sim
+close_sim

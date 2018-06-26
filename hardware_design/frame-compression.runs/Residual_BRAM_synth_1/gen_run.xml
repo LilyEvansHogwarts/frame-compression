@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="Residual_BRAM_synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1529987224">
+  <File Type="RDS-PROPCONSTRS" Name="Residual_BRAM_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Residual_BRAM.tcl"/>
+  <File Type="RDS-RDS" Name="Residual_BRAM.vds"/>
+  <File Type="RDS-UTIL" Name="Residual_BRAM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Residual_BRAM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Residual_BRAM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Residual_BRAM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Residual_BRAM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Residual_BRAM">
+    <File Path="$PSRCDIR/sources_1/ip/Residual_BRAM/Residual_BRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Residual_BRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Residual_BRAM">
+    <File Path="$PSRCDIR/sources_1/ip/Residual_BRAM/Residual_BRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Residual_BRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

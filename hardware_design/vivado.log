@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 26 12:23:50 2018
+# Process ID: 7668
+# Current directory: C:/Users/lenovo10/Desktop/frame-compression/frame-compression
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6384 C:\Users\lenovo10\Desktop\frame-compression\frame-compression\frame-compression.xpr
+# Log file: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/vivado.log
+# Journal file: C:/Users/lenovo10/Desktop/frame-compression/frame-compression\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/shzhang/Desktop/frame-compression' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 707.484 ; gain = 94.102
+update_compile_order -fileset sources_1
+reset_run Residual_BRAM_synth_1
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v" into library work [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Intra_mode.v" into library work [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Intra_mode.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/TBT.v" into library work [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/TBT.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Top.v" into library work [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/VLC.v" into library work [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/VLC.v:1]
+[Tue Jun 26 12:27:12 2018] Launched Residual_BRAM_synth_1...
+Run output will be captured here: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/Residual_BRAM_synth_1/runme.log
+[Tue Jun 26 12:27:12 2018] Launched synth_2...
+Run output will be captured here: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 727.207 ; gain = 0.000
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1157-1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.dcp' for cell 'b'
+INFO: [Netlist 29-17] Analyzing 1572 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc]
+Finished Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/ip/Residual_BRAM/Residual_BRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:22 ; elapsed = 00:01:52 . Memory (MB): peak = 1309.539 ; gain = 559.672
+report_power -name {power_1}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:01:12 ; elapsed = 00:00:48 . Memory (MB): peak = 2008.836 ; gain = 294.395
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 5 -input_pins -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 2010.840 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 5 -input_pins -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 2010.840 ; gain = 0.000
+save_constraints
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+[Tue Jun 26 15:35:26 2018] Launched synth_2...
+Run output will be captured here: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 2041.953 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 20 -nworst 5 -input_pins -name timing_3
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 2041.953 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 15:51:45 2018...

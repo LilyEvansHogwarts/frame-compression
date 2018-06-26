@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 26 11:37:01 2018
+# Process ID: 6300
+# Current directory: C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/shzhang/Desktop/frame-compression/frame-compression.sim/sim_1/behav/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 26 11:37:02 2018...

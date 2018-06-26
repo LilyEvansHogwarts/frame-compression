@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L unisims_ver -L unimacro_ver -L secureip -L blk_mem_gen_v8_3_2 -L xil_defaultlib -work xil_defaultlib xil_defaultlib.Residual_BRAM xil_defaultlib.glbl -o Residual_BRAM_opt

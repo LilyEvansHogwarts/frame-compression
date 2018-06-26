@@ -1,0 +1,433 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jun 26 15:35:49 2018
+# Process ID: 2680
+# Current directory: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2
+# Command line: vivado.exe -log Top.vds -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/Top.vds
+# Journal file: C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7vx485tffg1157-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 287.887 ; gain = 80.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Top.v:23]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'TBT' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/TBT.v:23]
+	Parameter W bound to: 8 - type: integer 
+	Parameter l bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TBT' (1#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/TBT.v:23]
+INFO: [Synth 8-638] synthesizing module 'IBP' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:23]
+	Parameter W bound to: 8 - type: integer 
+	Parameter Length bound to: 9 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Intra_mode' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Intra_mode.v:23]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Intra_mode' (2#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Intra_mode.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'DataOut1' does not match port width (8) of module 'Intra_mode' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:108]
+WARNING: [Synth 8-689] width (1) of port connection 'DataOut2' does not match port width (8) of module 'Intra_mode' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:109]
+WARNING: [Synth 8-689] width (1) of port connection 'DataOut3' does not match port width (8) of module 'Intra_mode' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:110]
+INFO: [Synth 8-256] done synthesizing module 'IBP' (3#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/IBP.v:23]
+INFO: [Synth 8-638] synthesizing module 'VLC' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/VLC.v:23]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VLC' (4#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/VLC.v:23]
+INFO: [Synth 8-638] synthesizing module 'Residual_BRAM' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/.Xil/Vivado-2680-LAPTOP-OB98NEGH/realtime/Residual_BRAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Residual_BRAM' (5#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/.Xil/Vivado-2680-LAPTOP-OB98NEGH/realtime/Residual_BRAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Top' (6#1) [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:01:10 . Memory (MB): peak = 327.016 ; gain = 119.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:01:11 . Memory (MB): peak = 327.016 ; gain = 119.863
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Residual_BRAM' instantiated as 'b' [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/Top.v:160]
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/.Xil/Vivado-2680-LAPTOP-OB98NEGH/dcp/Residual_BRAM_in_context.xdc] for cell 'b'
+Finished Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.runs/synth_2/.Xil/Vivado-2680-LAPTOP-OB98NEGH/dcp/Residual_BRAM_in_context.xdc] for cell 'b'
+Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc]
+create_clock: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 800.313 ; gain = 5.352
+Finished Parsing XDC File [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 800.363 ; gain = 0.051
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'b' at clock pin 'clka' is different from the actual clock period '17.000', this can result in different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:16 ; elapsed = 00:02:42 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:16 ; elapsed = 00:02:43 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:02:43 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/sources_1/new/VLC.v:83]
+INFO: [Synth 8-5544] ROM "BP_mode4" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:02:49 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |VLC           |           3|     25346|
+|2     |Top__GC0      |           1|      1716|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    512 Bit       Adders := 15    
+	   4 Input    512 Bit       Adders := 12    
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 14    
+	   3 Input      8 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 18    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 24    
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module VLC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    512 Bit       Adders := 5     
+	   4 Input    512 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module TBT 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module Intra_mode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+Module IBP 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:19 ; elapsed = 00:02:51 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:02:51 . Memory (MB): peak = 801.488 ; gain = 594.336
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:19 ; elapsed = 00:02:51 . Memory (MB): peak = 801.488 ; gain = 594.336
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |VLC           |           3|     25346|
+|2     |Top__GC0      |           1|      1716|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/t1/\DataOut_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_0/t2/Mem_reg[0][7]' (FDRE) to 'i_0/t2/reset[1].Mem_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/t2/\reset[1].Mem_reg[1][7] )
+WARNING: [Synth 8-3332] Sequential element (DataOut_reg[7]) is unused and will be removed from module TBT.
+WARNING: [Synth 8-3332] Sequential element (DataOutEn_reg) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[7]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[6]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[5]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[4]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[3]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[2]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut1_reg[1]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[7]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[6]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[5]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[4]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[3]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[2]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut2_reg[1]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[7]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[6]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[5]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[4]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[3]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[2]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (DataOut3_reg[1]) is unused and will be removed from module Intra_mode.
+WARNING: [Synth 8-3332] Sequential element (reset[2].Mem_reg[2][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[3].Mem_reg[3][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[4].Mem_reg[4][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[5].Mem_reg[5][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[6].Mem_reg[6][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[7].Mem_reg[7][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[8].Mem_reg[8][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (reset[1].Mem_reg[1][7]) is unused and will be removed from module IBP.
+WARNING: [Synth 8-3332] Sequential element (Mem_reg[0][7]) is unused and will be removed from module IBP.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:03:47 ; elapsed = 00:05:42 . Memory (MB): peak = 898.172 ; gain = 691.020
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:03:47 ; elapsed = 00:05:42 . Memory (MB): peak = 898.172 ; gain = 691.020
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |VLC           |           1|     15975|
+|2     |Top__GC0      |           1|      1116|
+|3     |VLC__1        |           2|     15975|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:14 ; elapsed = 00:06:20 . Memory (MB): peak = 898.172 ; gain = 691.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |VLC           |           1|     15975|
+|2     |Top__GC0      |           1|      1116|
+|3     |VLC__1        |           2|     15975|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:54 ; elapsed = 00:07:09 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:04:54 ; elapsed = 00:07:09 . Memory (MB): peak = 919.219 ; gain = 712.066
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:54 ; elapsed = 00:07:09 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:12 ; elapsed = 00:07:30 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:13 ; elapsed = 00:07:31 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:13 ; elapsed = 00:07:31 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|IBP         | reset[6].Mem_reg[6][2] | 5      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|IBP         | reset[8].Mem_reg[8][6] | 7      | 4     | YES          | NO                 | YES               | 4      | 0       | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Residual_BRAM |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |Residual_BRAM |     1|
+|2     |BUFG          |     1|
+|3     |CARRY4        |  1556|
+|4     |LUT1          |    15|
+|5     |LUT2          |  4637|
+|6     |LUT3          |  5316|
+|7     |LUT4          |   628|
+|8     |LUT5          |  2557|
+|9     |LUT6          |  9130|
+|10    |MUXF7         |  1490|
+|11    |SRL16E        |     7|
+|12    |FDRE          |  1673|
+|13    |IBUF          |    15|
+|14    |OBUF          |    20|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           | 27061|
+|2     |  t3     |VLC        |  8877|
+|3     |  t4     |VLC__2     |  8877|
+|4     |  t5     |VLC__1     |  8877|
+|5     |  t1     |TBT        |     9|
+|6     |  t2     |IBP        |   207|
+|7     |    uut  |Intra_mode |    30|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:13 ; elapsed = 00:07:31 . Memory (MB): peak = 919.219 ; gain = 712.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:07 ; elapsed = 00:05:23 . Memory (MB): peak = 919.219 ; gain = 225.879
+Synthesis Optimization Complete : Time (s): cpu = 00:05:14 ; elapsed = 00:07:32 . Memory (MB): peak = 919.219 ; gain = 712.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1571 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:25 ; elapsed = 00:07:11 . Memory (MB): peak = 919.219 ; gain = 705.453
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 919.219 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.859 . Memory (MB): peak = 919.219 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 15:44:37 2018...

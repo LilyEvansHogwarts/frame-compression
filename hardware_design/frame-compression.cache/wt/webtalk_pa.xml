@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Jun 26 15:51:27 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="2b71425495344efa987066eea2d90249" type="ProjectID"/>
+<property name="ProjectIteration" value="2" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Flow_RuntimeOptimized" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Performance_Retiming" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="16" type="JavaHandler"/>
+<property name="CoreView" value="2" type="JavaHandler"/>
+<property name="CustomizeCore" value="12" type="JavaHandler"/>
+<property name="EditDelete" value="3" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="10" type="JavaHandler"/>
+<property name="RecustomizeCore" value="5" type="JavaHandler"/>
+<property name="ReportDRC" value="3" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="12" type="JavaHandler"/>
+<property name="RunImplementation" value="2" type="JavaHandler"/>
+<property name="RunPowerEstimation" value="5" type="JavaHandler"/>
+<property name="RunSchematic" value="2" type="JavaHandler"/>
+<property name="RunSynthesis" value="12" type="JavaHandler"/>
+<property name="SaveDesign" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="32" type="JavaHandler"/>
+<property name="ShowPowerEstimation" value="6" type="JavaHandler"/>
+<property name="ShowView" value="17" type="JavaHandler"/>
+<property name="SimulationClose" value="112" type="JavaHandler"/>
+<property name="SimulationRun" value="160" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="2" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="2" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+<property name="XdcCreateClock" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, 16.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_SPECIFY_FALL_EDGE_TIME_OF_CLOCK, 5.5" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_SPECIFY_FALL_EDGE_TIME_OF_CLOCK, 6.5" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_SPECIFY_FALL_EDGE_TIME_OF_CLOCK, 7.5" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_SPECIFY_FALL_EDGE_TIME_OF_CLOCK, 8.5" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk ; 17.0 ; 0.0 ; 8.5 ; true ; [get_ports clk] ; C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc ;  ; , 0, 0.0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk ; 17.0 ; 0.0 ; 8.5 ; true ; [get_ports clk] ; C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc ;  ; , 0, 0.0, 3, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk ; 17.0 ; 0.0 ; 8.5 ; true ; [get_ports clk] ; C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc ;  ; , 0, 17.0, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk ; 17.0 ; 0.0 ; 8.5 ; true ; [get_ports clk] ; C:/Users/lenovo10/Desktop/frame-compression/frame-compression/frame-compression.srcs/constrs_1/new/implementation1.xdc ;  ; , 0, 17.0, 2, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Synthesized Design, Report Timing Summary], 22, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="18" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="11" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
